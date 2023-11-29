@@ -70,6 +70,10 @@ Response:
 ]
 ```
 
+| Status Code | Case    |
+| ----------- | ------- |
+| 200 OK      | Success |
+
 ## Get All Products Sorted By Price
 
 By using the /products endpoint and passing `sortByPrice` as a query parameter with either `asc` or `desc` as value, you can sort the products by price ascending or descending.
@@ -80,6 +84,11 @@ Request:
 [GET] https://e-commerce.com/api/v1/products?sortByPrice=<"asc" or "desc">
 ```
 
+| Status Code     | Case                 |
+| --------------- | -------------------- |
+| 200 OK          | Success              |
+| 400 Bad Request | Invalid sorting type |
+
 ## Get All Products Sorted By Title
 
 By using the /products endpoint and passing `sortByTitle` as a query parameter with either `asc` or `desc` as value, you can sort the products by title ascending or descending.
@@ -89,6 +98,11 @@ Request:
 ```
 [GET] https://e-commerce.com/api/v1/products?sortByTitle=<"asc" or "desc">
 ```
+
+| Status Code     | Case                 |
+| --------------- | -------------------- |
+| 200 OK          | Success              |
+| 400 Bad Request | Invalid sorting type |
 
 ## Get All Products With Pagination
 
@@ -170,6 +184,11 @@ Or for a pagination with 20 items per page, it looks like this:
 | /products?offset=20&limit=20 | Return products from 20 to 40 |
 | /products?offset=40&limit=20 | Return products from 40 to 60 |
 
+| Status Code     | Case                        |
+| --------------- | --------------------------- |
+| 200 OK          | Success                     |
+| 400 Bad Request | Invalid offset, limit value |
+
 ## Get `X` Most Purchased Product
 
 By using the /products endpoint and passing `top` as a query parameter and a number `x` as a value, you can get the `x` most purchased products.
@@ -228,6 +247,11 @@ Response:
 ]
 ```
 
+| Status Code     | Case              |
+| --------------- | ----------------- |
+| 200 OK          | Success           |
+| 400 Bad Request | Invalid top value |
+
 ## Get A Single Product
 
 You can get a single product by adding the id as a parameter: `/products/<id>`
@@ -283,6 +307,11 @@ Response:
 }
 ```
 
+| Status Code   | Case              |
+| ------------- | ----------------- |
+| 200 OK        | Success           |
+| 404 Not Found | ID does not exist |
+
 ## Create a product
 
 You can create a new product by sending an object in the body with shape like this to `/products`. And since only admins can modify the product collection, you need to also include a token in the header:
@@ -325,6 +354,13 @@ Response:
 }
 ```
 
+| Status Code      | Case                                            |
+| ---------------- | ----------------------------------------------- |
+| 201 Created      | Success                                         |
+| 400 Bad Request  | Part of request body missing, invalid image URL |
+| 401 Unauthorized | Invalid token, no authorization token           |
+| 403 Forbidden    | Token not belonging to admin                    |
+
 ## Update A Product
 
 You can update product by sending an object in the body with shape like this to `/products` (only property and value that needs to be updated) and adding the `id` as a parameter. And since only admins can modify the product collection, you need to also include a token in the header:
@@ -365,6 +401,14 @@ Response:
 }
 ```
 
+| Status Code      | Case                                            |
+| ---------------- | ----------------------------------------------- |
+| 201 Created      | Success                                         |
+| 400 Bad Request  | Part of request body missing, invalid image URL |
+| 401 Unauthorized | Invalid token, no authorization token           |
+| 403 Forbidden    | Token not belonging to admin                    |
+| 404 Not Found    | ID does not exist                               |
+
 ## Delete A Product
 
 You can delete a product by adding the id as a parameter: `/products/<id>`. And since only admins can modify the product collection, you need to also include a token in the header:
@@ -383,3 +427,10 @@ Response:
 ```
 true
 ```
+
+| Status Code      | Case                                  |
+| ---------------- | ------------------------------------- |
+| 201 Created      | Success                               |
+| 401 Unauthorized | Invalid token, no authorization token |
+| 403 Forbidden    | Token not belonging to admin          |
+| 404 Not Found    | ID does not exist                     |
