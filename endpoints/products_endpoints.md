@@ -433,4 +433,3 @@ true
 | 200 OK           | Success                               |
 | 401 Unauthorized | Invalid token, no authorization token |
 | 403 Forbidden    | Token not belonging to admin          |
-| 404 Not Found    | ID does not exist                     |
