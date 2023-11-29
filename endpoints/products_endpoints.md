@@ -27,12 +27,12 @@ Response:
 ```
 [
   {
-    "id": 4,
+    "product_id": 4,
     "title": "Product 1",
     "price": 500,
     "description": "Description of Product 1",
     "category": {
-      "id": 5,
+      "category_id": 5,
       "name": "Category 1",
       "image": "https://placeimg.com/640/480/any?r=0.591926261873231"
     },
@@ -119,12 +119,12 @@ Response:
 ```
 [
   {
-    "id": 4,
+    "product_id": 4,
     "title": "Product 1",
     "price": 500,
     "description": "Description of Product 1",
     "category": {
-      "id": 5,
+      "category_id": 5,
       "name": "Category 1",
       "image": "https://placeimg.com/640/480/any?r=0.591926261873231"
     },
@@ -204,12 +204,12 @@ Response:
 ```
 [
   {
-    "id": 4,
+    "product_id": 4,
     "title": "Product 1",
     "price": 500,
     "description": "Description of Product 1",
     "category": {
-      "id": 5,
+      "category_id": 5,
       "name": "Category 1",
       "image": "https://placeimg.com/640/480/any?r=0.591926261873231"
     },
@@ -266,12 +266,12 @@ Response:
 
 ```
 {
-  "id": 1,
+  "product_id": 1,
   "title": "Product 1",
   "price": 500,
   "description": "Description of Product 1",
   "category": {
-    "id": 5,
+    "category_id": 5,
     "name": "Category 1",
     "image": "https://placeimg.com/640/480/any?r=0.591926261873231"
   },
@@ -319,7 +319,7 @@ You can create a new product by sending an object in the body with shape like th
 Request:
 
 ```
-[POST] https://api.escuelajs.co/api/v1/products/
+[POST] https://e-commerce.com/api/v1/products/
 
 # Body
 {
@@ -340,12 +340,12 @@ Response:
 
 ```
 {
-  "id": 2,
+  "product_id": 2,
   "title": "New Product",
   "price": 40,
   "description": "A description",
   "category": {
-    "id": 1,
+    "category_id": 1,
     "name": "Category 1",
     "image": "https://placeimg.com/640/480/any?r=0.591926261873231"
   },
@@ -368,7 +368,7 @@ You can update product by sending an object in the body with shape like this to 
 Request:
 
 ```
-[PATCH] https://api.escuelajs.co/api/v1/products/1
+[PATCH] https://e-commerce.com/api/v1/products/1
 
 # Body
 {
@@ -387,12 +387,12 @@ Response:
 
 ```
 {
-  "id": 1,
+  "product_id": 1,
   "title": "Updated title",
   "price": 30,
   "description": "Updated description",
   "category": {
-    "id": 1,
+    "category_id": 1,
     "name": "Category 1",
     "image": "https://placeimg.com/640/480/any?r=0.591926261873231"
   },
@@ -403,7 +403,7 @@ Response:
 
 | Status Code      | Case                                            |
 | ---------------- | ----------------------------------------------- |
-| 201 Created      | Success                                         |
+| 200 OK           | Success                                         |
 | 400 Bad Request  | Part of request body missing, invalid image URL |
 | 401 Unauthorized | Invalid token, no authorization token           |
 | 403 Forbidden    | Token not belonging to admin                    |
@@ -414,7 +414,7 @@ Response:
 You can delete a product by adding the id as a parameter: `/products/<id>`. And since only admins can modify the product collection, you need to also include a token in the header:
 
 ```
-[DELETE] https://api.escuelajs.co/api/v1/products/1
+[DELETE] https://e-commerce.com/api/v1/products/1
 
 # Headers
 {
@@ -430,7 +430,7 @@ true
 
 | Status Code      | Case                                  |
 | ---------------- | ------------------------------------- |
-| 201 Created      | Success                               |
+| 200 OK           | Success                               |
 | 401 Unauthorized | Invalid token, no authorization token |
 | 403 Forbidden    | Token not belonging to admin          |
 | 404 Not Found    | ID does not exist                     |
