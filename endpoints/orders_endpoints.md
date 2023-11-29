@@ -90,7 +90,7 @@ Request:
 
 ## Get A Single Order
 
-When logged in as an admin or the user that made the order, you can get that single order by adding the order id as a parameter: `/orders/<id>`, with a token in the header.
+When logged in as an admin or the user that made the order, you can get that single order by adding the order id as a parameter: `/orders/:id`, with a token in the header.
 
 Request:
 
@@ -150,7 +150,7 @@ When logged in as a user, you can create a new order by sending an object in the
 Request:
 
 ```
-[POST] https://e-commerce.com/api/v1/orders/
+[POST] https://e-commerce.com/api/v1/orders
 
 # Body
 {
@@ -208,11 +208,10 @@ Response:
 
 | Status Code      | Case                                  |
 | ---------------- | ------------------------------------- |
-| 200 OK           | Success                               |
+| 201 Created      | Success                               |
 | 400 Bad Request  | Part of request body missing          |
 | 401 Unauthorized | Invalid token, no authorization token |
 | 403 Forbidden    | Token not belonging to admin          |
-| 404 Not Found    | ID does not exist                     |
 
 ## Update An Order
 
