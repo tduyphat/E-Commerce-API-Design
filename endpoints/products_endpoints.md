@@ -1,4 +1,4 @@
-#Products Endpoints
+# Products Endpoints
 
 | HTTP Method | Endpoint                                | Description                                                           |
 | ----------- | --------------------------------------- | --------------------------------------------------------------------- |
@@ -9,8 +9,8 @@
 | GET         | /products?top=x                         | [Get `x` most purchased products](#get-x-most-purchased-product)      |
 | GET         | /products/:id                           | [Get a single product](#get-a-single-product)                         |
 | POST        | /products                               | [Create a product](#create-a-product)                                 |
-| PATCH       | /products/:id                           | Update a product                                                      |
-| DELETE      | /products/:id                           | Delete a product                                                      |
+| PATCH       | /products/:id                           | [Update a product](#update-a-product)                                 |
+| DELETE      | /products/:id                           | [Delete a product](#update-a-product)                                 |
 
 ## Get All Products
 
