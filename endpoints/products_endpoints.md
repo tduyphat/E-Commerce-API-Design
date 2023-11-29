@@ -10,7 +10,7 @@
 | GET         | /products/:id                           | [Get a single product](#get-a-single-product)                         |
 | POST        | /products                               | [Create a product](#create-a-product)                                 |
 | PATCH       | /products/:id                           | [Update a product](#update-a-product)                                 |
-| DELETE      | /products/:id                           | [Delete a product](#update-a-product)                                 |
+| DELETE      | /products/:id                           | [Delete a product](#delete-a-product)                                 |
 
 ## Get All Products
 
