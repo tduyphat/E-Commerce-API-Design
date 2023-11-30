@@ -73,7 +73,7 @@ When logged in as an admin or a user, you can access the list of all orders made
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/orders/user/1
+[GET] https://e-commerce.com/api/v1/orders/user/:id
 
 # Headers
 {
@@ -95,7 +95,7 @@ When logged in as an admin or the user that made the order, you can get that sin
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/orders/1
+[GET] https://e-commerce.com/api/v1/orders/:id
 
 # Headers
 {
@@ -220,7 +220,7 @@ When logged in as an admin, you can update an order by sending an object in the 
 Request:
 
 ```
-[PATCH] https://e-commerce.com/api/v1/orders/1
+[PATCH] https://e-commerce.com/api/v1/orders/:id
 
 # Body
 {
@@ -281,7 +281,7 @@ When logged in as an admin, you can delete an order by adding the order ID as a 
 Request:
 
 ```
-[DELETE] https://e-commerce.com/api/v1/orders/1
+[DELETE] https://e-commerce.com/api/v1/orders/:id
 
 # Headers
 {

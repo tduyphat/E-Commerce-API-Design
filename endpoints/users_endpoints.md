@@ -52,7 +52,7 @@ When logged in as an admin, you can get a single user by adding the user ID as a
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/users/1
+[GET] https://e-commerce.com/api/v1/users/:id
 
 # Headers
 {
@@ -123,7 +123,7 @@ When logged in as an admin or a customer, you can update that customer by sendin
 Request:
 
 ```
-[PATCH] https://e-commerce.com/api/v1/users/1
+[PATCH] https://e-commerce.com/api/v1/users/:id
 
 # Body
 {
@@ -164,7 +164,7 @@ When logged in as an admin, you can delete an order by adding the user ID as a p
 Request:
 
 ```
-[DELETE] https://e-commerce.com/api/v1/users/1
+[DELETE] https://e-commerce.com/api/v1/users/:id
 
 # Headers
 {

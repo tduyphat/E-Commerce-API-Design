@@ -259,7 +259,7 @@ You can get a single product by adding the product ID as a parameter: `/products
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/products/1
+[GET] https://e-commerce.com/api/v1/products/:id
 ```
 
 Response:
@@ -368,7 +368,7 @@ You can update product by sending an object in the body with shape like this to 
 Request:
 
 ```
-[PATCH] https://e-commerce.com/api/v1/products/1
+[PATCH] https://e-commerce.com/api/v1/products/:id
 
 # Body
 {
@@ -414,7 +414,7 @@ Response:
 You can delete a product by adding the product ID as a parameter: `/products/:id`. And since only admins can modify the product collection, you need to also include a token in the header:
 
 ```
-[DELETE] https://e-commerce.com/api/v1/products/1
+[DELETE] https://e-commerce.com/api/v1/products/:id
 
 # Headers
 {

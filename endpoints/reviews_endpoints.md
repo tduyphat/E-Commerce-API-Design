@@ -51,7 +51,7 @@ You can access the list of all reviews of a product by passing the product ID as
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/reviews/product/e440b850-09b8-4e54-9328-9b29a42d9e7d
+[GET] https://e-commerce.com/api/v1/reviews/product/:id
 ```
 
 | Status Code   | Case              |
@@ -66,7 +66,7 @@ You can access the list of all reviews made by a user by passing the user ID as 
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/reviews/user/e440b850-09b8-4e54-9328-9b29a42d9e7d
+[GET] https://e-commerce.com/api/v1/reviews/user/:id
 ```
 
 | Status Code   | Case              |
@@ -81,7 +81,7 @@ You can get a single review by passing the review ID as parameter in `/reviews/:
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/reviews/e440b850-09b8-4e54-9328-9b29a42d9e7d
+[GET] https://e-commerce.com/api/v1/reviews/:id
 ```
 
 Response:
@@ -156,7 +156,7 @@ When logged in as a customer, you can update a review you have made before by se
 Request:
 
 ```
-[PATCH] https://e-commerce.com/api/v1/reviews/e440b850-09b8-4e54-9328-9b29a42d9e7d
+[PATCH] https://e-commerce.com/api/v1/reviews/:id
 
 # Body
 
@@ -196,7 +196,7 @@ When logged in as a customer, you can delete a review you made before by adding 
 Request:
 
 ```
-[DELETE] https://e-commerce.com/api/v1/reviews/e440b850-09b8-4e54-9328-9b29a42d9e7d
+[DELETE] https://e-commerce.com/api/v1/reviews/:id
 ```
 
 Response:

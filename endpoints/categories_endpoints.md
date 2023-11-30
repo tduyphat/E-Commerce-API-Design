@@ -53,7 +53,7 @@ You can get a single category by adding the category ID as a parameter: `/catego
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/categories/f2e28553-2b43-4d61-bb4d-20a2b88048a0
+[GET] https://e-commerce.com/api/v1/categories/:id
 ```
 
 Response:
@@ -78,7 +78,7 @@ You can get the products by category adding the category ID as a parameter to `/
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/categories/f2e28553-2b43-4d61-bb4d-20a2b88048a0/products
+[GET] https://e-commerce.com/api/v1/categories/:id/products
 ```
 
 Response:
@@ -179,7 +179,7 @@ When logged in as an admin, you can update a category by sending an object in th
 Request:
 
 ```
-[PATCH] https://e-commerce.com/api/v1/categories/f2e28553-2b43-4d61-bb4d-20a2b88048a0
+[PATCH] https://e-commerce.com/api/v1/categories/:id
 
 # Body
 {
@@ -217,7 +217,7 @@ When logged in as an admin, you can delete a category by adding the category ID 
 Request:
 
 ```
-[DELETE] https://e-commerce.com/api/v1/categories/f2e28553-2b43-4d61-bb4d-20a2b88048a0
+[DELETE] https://e-commerce.com/api/v1/categories/:id
 
 # Headers
 {
