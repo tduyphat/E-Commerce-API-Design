@@ -110,13 +110,17 @@ $$ LANGUAGE plpgsql;
 --   -Input: reviewID (id of the review to be deleted), 
 --   -Output: void
 CREATE OR REPLACE FUNCTION delete_review(reviewID uuid)
-RETURNS bool AS $$
+RETURNS BOOLEAN AS $$
+DECLARE
+    deleted BOOLEAN;
 BEGIN
     IF NOT EXISTS (SELECT * FROM public.review WHERE review_id = reviewID)
 	THEN RAISE EXCEPTION no_data_found USING message = 'Review id not found';
 	END IF;
 
+    deleted := FALSE;
     DELETE FROM public.review WHERE review_id = reviewID;
-	RETURN true;
+	GET DIAGNOSTICS deleted = ROW_COUNT;
+    RETURN deleted;
 END;
 $$ LANGUAGE plpgsql;

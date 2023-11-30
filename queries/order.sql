@@ -81,14 +81,19 @@ $$ LANGUAGE plpgsql;
 --   -This function deletes an order in the database.
 --   -delete_order(order_id_delete UUID)
 --   -Input: order_id_delete (id of the order to be deleted), 
---   -Output: void
+--   -Output: boolean
 CREATE OR REPLACE FUNCTION delete_order(order_id_delete uuid)
-RETURNS TABLE(orderID uuid, userID uuid, orderDate date, orderStatus status) AS $$
+RETURNS BOOLEAN AS $$
+DECLARE
+    deleted BOOLEAN;
 BEGIN
     IF NOT EXISTS (SELECT * FROM public.order WHERE order_id = order_id_delete)
 	THEN RAISE EXCEPTION no_data_found USING message = 'Order id not found';
 	END IF;
     
+    deleted := FALSE;
     DELETE FROM public.order WHERE order_id = order_id_delete;
+    GET DIAGNOSTICS deleted = ROW_COUNT;
+    RETURN deleted;
 END;
 $$ LANGUAGE plpgsql;
