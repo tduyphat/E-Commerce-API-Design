@@ -31,7 +31,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
---   -This function retrieves all review with the given product id from the database.
+--   -This function retrieves all reviews with the given product id from the database.
 --   -get_reviews_by_product(productID UUID)
 --   -Input: productID (id of the product of which reviews are retreived)
 --   -Output: returns a table of reviews
@@ -108,15 +108,19 @@ $$ LANGUAGE plpgsql;
 --   -This function deletes a review in the database.
 --   -delete_review(reviewID UUID)
 --   -Input: reviewID (id of the review to be deleted), 
---   -Output: void
+--   -Output: boolean
 CREATE OR REPLACE FUNCTION delete_review(reviewID uuid)
-RETURNS bool AS $$
+RETURNS BOOLEAN AS $$
+DECLARE
+    deleted BOOLEAN;
 BEGIN
     IF NOT EXISTS (SELECT * FROM public.review WHERE review_id = reviewID)
 	THEN RAISE EXCEPTION no_data_found USING message = 'Review id not found';
 	END IF;
 
+    deleted := FALSE;
     DELETE FROM public.review WHERE review_id = reviewID;
-	RETURN true;
+	GET DIAGNOSTICS deleted = ROW_COUNT;
+    RETURN deleted;
 END;
 $$ LANGUAGE plpgsql;
