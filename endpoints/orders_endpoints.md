@@ -73,7 +73,7 @@ When logged in as an admin or a user, you can access the list of all orders made
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/orders/user/:id
+[GET] https://e-commerce.com/api/v1/orders/user/1
 
 # Headers
 {
@@ -95,7 +95,7 @@ When logged in as an admin or the user that made the order, you can get that sin
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/orders/:id
+[GET] https://e-commerce.com/api/v1/orders/1
 
 # Headers
 {

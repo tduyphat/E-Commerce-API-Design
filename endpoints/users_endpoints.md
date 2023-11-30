@@ -47,12 +47,12 @@ Response:
 
 ## Get A Single User
 
-When logged in as an admin, you can get a single user by adding the user id as a parameter: `/users/:id`, with a token in the header.
+When logged in as an admin, you can get a single user by adding the user ID as a parameter: `/users/:id`, with a token in the header.
 
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/users/:id
+[GET] https://e-commerce.com/api/v1/users/1
 
 # Headers
 {
