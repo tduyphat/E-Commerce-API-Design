@@ -47,12 +47,12 @@ Response:
 
 ## Get A Single User
 
-When logged in as an admin, you can get a single user by adding the user id as a parameter: `/users/:id`, with a token in the header.
+When logged in as an admin, you can get a single user by adding the user ID as a parameter: `/users/:id`, with a token in the header.
 
 Request:
 
 ```
-[GET] https://e-commerce.com/api/v1/users/:id
+[GET] https://e-commerce.com/api/v1/users/1
 
 # Headers
 {
@@ -118,7 +118,7 @@ Response:
 
 ## Update An User
 
-When logged in as an admin or a user, you can update that user by sending an object in the body with the following shape to `/users` (only property and value that needs to be updated) and adding the `id` as a parameter, with a token in the header.
+When logged in as an admin or a customer, you can update that customer by sending an object in the body with the following shape to `/users/:id` (only properties and values that need to be updated) and adding the user ID as a parameter, with a token in the header.
 
 Request:
 
@@ -159,7 +159,7 @@ Response:
 
 ## Delete An User
 
-When logged in as an admin, you can delete an order by adding the id as a parameter: `/users/:id`, with a token in the header.
+When logged in as an admin, you can delete an order by adding the user ID as a parameter: `/users/:id`, with a token in the header.
 
 Request:
 
