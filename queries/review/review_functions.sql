@@ -31,7 +31,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
---   -This function retrieves all review with the given product id from the database.
+--   -This function retrieves all reviews with the given product id from the database.
 --   -get_reviews_by_product(productID UUID)
 --   -Input: productID (id of the product of which reviews are retreived)
 --   -Output: returns a table of reviews
@@ -108,7 +108,7 @@ $$ LANGUAGE plpgsql;
 --   -This function deletes a review in the database.
 --   -delete_review(reviewID UUID)
 --   -Input: reviewID (id of the review to be deleted), 
---   -Output: void
+--   -Output: boolean
 CREATE OR REPLACE FUNCTION delete_review(reviewID uuid)
 RETURNS BOOLEAN AS $$
 DECLARE
