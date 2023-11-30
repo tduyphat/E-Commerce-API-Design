@@ -90,7 +90,7 @@ Request:
 
 ## Get A Single Order
 
-When logged in as an admin or the user that made the order, you can get that single order by adding the order id as a parameter: `/orders/:id`, with a token in the header.
+When logged in as an admin or the user that made the order, you can get that single order by adding the order ID as a parameter: `/orders/:id`, with a token in the header.
 
 Request:
 
@@ -145,7 +145,7 @@ Response:
 
 ## Create An Order
 
-When logged in as a user, you can create a new order by sending an object in the body with the following shape to `/orders`, with a token in the header:
+When logged in as a customer, you can create a new order by sending an object in the body with the following shape to `/orders`, with a token in the header:
 
 Request:
 
@@ -215,7 +215,7 @@ Response:
 
 ## Update An Order
 
-When logged in as an admin, you can update an order by sending an object in the body with the following shape to `/orders` (only property and value that needs to be updated) and adding the `id` as a parameter, with a token in the header.
+When logged in as an admin, you can update an order by sending an object in the body with the following shape to `/orders/:id` (only properties and values that need to be updated) and adding the order ID as a parameter, with a token in the header.
 
 Request:
 
@@ -276,7 +276,7 @@ Response:
 
 ## Delete An Order
 
-When logged in as an admin, you can delete an order by adding the id as a parameter: `/orders/<id>`, with a token in the header.
+When logged in as an admin, you can delete an order by adding the order ID as a parameter: `/orders/:id`, with a token in the header.
 
 Request:
 
@@ -295,9 +295,10 @@ Response:
 true
 ```
 
-| Status Code      | Case                                  |
-| ---------------- | ------------------------------------- |
-| 200 OK           | Success                               |
-| 401 Unauthorized | Invalid token, no authorization token |
-| 403 Forbidden    | Token not belonging to admin          |
-| 404 Not Found    | ID does not exist                     |
+| Status Code      | Case                                    |
+| ---------------- | --------------------------------------- |
+| 200 OK           | Success                                 |
+| 400 Bad Request  | Part of request body missing or invalid |
+| 401 Unauthorized | Invalid token, no authorization token   |
+| 403 Forbidden    | Token not belonging to admin            |
+| 404 Not Found    | ID does not exist                       |

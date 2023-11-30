@@ -174,7 +174,7 @@ Response:
 
 ## Update A Category
 
-When logged in as an admin, you can update a category by sending an object in the body with the following shape to `/categories` (only property and value that needs to be updated) and adding the `id` as a parameter, with a token in the header.
+When logged in as an admin, you can update a category by sending an object in the body with the following shape to `/categories` (only properties and values that need to be updated) and adding the `id` as a parameter, with a token in the header.
 
 Request:
 
@@ -212,7 +212,7 @@ Response:
 
 ## Delete An User
 
-When logged in as an admin, you can delete a category by adding the id as a parameter: `/categories/f2e28553-2b43-4d61-bb4d-20a2b88048a0`, with a token in the header.
+When logged in as an admin, you can delete a category by adding the category ID as a parameter: `/categories/f2e28553-2b43-4d61-bb4d-20a2b88048a0`, with a token in the header.
 
 Request:
 

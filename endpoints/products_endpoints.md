@@ -254,7 +254,7 @@ Response:
 
 ## Get A Single Product
 
-You can get a single product by adding the id as a parameter: `/products/<id>`
+You can get a single product by adding the product ID as a parameter: `/products/:id`
 
 Request:
 
@@ -363,7 +363,7 @@ Response:
 
 ## Update A Product
 
-You can update product by sending an object in the body with shape like this to `/products` (only property and value that needs to be updated) and adding the `id` as a parameter. And since only admins can modify the product collection, you need to also include a token in the header:
+You can update product by sending an object in the body with shape like this to `/products/:id` (only properties and values that need to be updated) and adding the product ID as a parameter. And since only admins can modify the product collection, you need to also include a token in the header:
 
 Request:
 
@@ -411,7 +411,7 @@ Response:
 
 ## Delete A Product
 
-You can delete a product by adding the id as a parameter: `/products/<id>`. And since only admins can modify the product collection, you need to also include a token in the header:
+You can delete a product by adding the product ID as a parameter: `/products/:id`. And since only admins can modify the product collection, you need to also include a token in the header:
 
 ```
 [DELETE] https://e-commerce.com/api/v1/products/1

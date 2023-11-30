@@ -118,7 +118,7 @@ Response:
 
 ## Update An User
 
-When logged in as an admin or a user, you can update that user by sending an object in the body with the following shape to `/users` (only property and value that needs to be updated) and adding the `id` as a parameter, with a token in the header.
+When logged in as an admin or a customer, you can update that customer by sending an object in the body with the following shape to `/users/:id` (only properties and values that need to be updated) and adding the user ID as a parameter, with a token in the header.
 
 Request:
 
@@ -159,7 +159,7 @@ Response:
 
 ## Delete An User
 
-When logged in as an admin, you can delete an order by adding the id as a parameter: `/users/:id`, with a token in the header.
+When logged in as an admin, you can delete an order by adding the user ID as a parameter: `/users/:id`, with a token in the header.
 
 Request:
 
