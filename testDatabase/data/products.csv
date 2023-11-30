@@ -13,3 +13,53 @@ c104c7fe-b87d-44f1-8ae3-bbba07d73d50,Perfume,Long-lasting fragrance,49.99,cecb9b
 8c74f072-9cc4-4b12-b15c-0e7d40e06a48,Watch,Stylish wristwatch,89.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
 5519c993-3f1a-4cc3-8d8b-e4b3e9144dfb,Sweater,Warm knitted sweater,39.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
 201651bc-dc06-43b0-92bf-36da75479338,Skirt,Floral-printed skirt,29.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+af17269a-5c88-4f1b-8e6c-96143cc2f9f7,Laptop Pro,Powerful laptop with advanced features,1299.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+bc613d7b-7a6b-49a1-b4f2-0a2c42ef0b05,Smartphone X,Flagship smartphone with cutting-edge technology,899.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+7456ef26-8c1a-4e52-bd8e-7d0e9b4eac90,High-Performance Desktop,Desktop computer for gaming and professional use,1999.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+b3af8c79-5f24-421b-aa8b-d71d678b7758,Bluetooth Earbuds,Wireless earbuds with superior sound quality,79.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+8933e9bc-ef84-4f3d-9443-c5986ff0e36c,Smartwatch Pro,Premium smartwatch with advanced health tracking,149.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+f891edb2-c38f-48f4-8ea0-594cde3c22c7,Leather Jacket,Stylish leather jacket for a cool look,149.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+e55e60a4-7f49-4be7-9448-1455fbf3b64f,Cozy Hoodie,Comfortable hoodie for a relaxed style,39.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+1a5b8a01-23b3-4dcd-86d2-869fbd7ec2ac,Slim Fit Jeans,Trendy slim fit jeans for a modern look,59.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+7d58ebe0-7d0a-4aeb-837a-8c0f6a46fc5c,Printed T-Shirt,Soft cotton t-shirt with a unique print,19.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+628f0aa2-1528-44f1-8f7c-c9c18f855847,Formal Shirt,Elegant formal shirt for professional occasions,49.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+f5a1e566-8773-4cda-aee2-1ed86cbac748,Luxury Sofa,Large and luxurious sofa for maximum comfort,999.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+9e748c02-bd17-45ef-a20b-ae7a8bb12c87,Coffee Table Set,Matching set of modern coffee tables,149.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+c60e7113-b6d7-44e5-b623-2c94b54f4a6a,King-size Bed,Spacious king-size bed for a restful sleep,799.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+cd35e1a9-6f91-45d6-81ee-3a8b09eb68e5,Study Desk,Compact study desk for a productive workspace,89.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+642741fc-14b4-4d6c-bdb3-442e2a6e32d8,Modern Dining Table,Sleek dining table for contemporary dining spaces,299.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+d4a4e4e3-79cd-42ea-882d-8c6a188c8ce5,Sci-Fi Novel,Exciting science fiction novel with a gripping plot,14.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+f5068f80-8281-4e06-a9c1-9b19a74d3c7b,Travel Guide,Comprehensive travel guide for exploring new destinations,29.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+38f7a1c1-71a2-4aa9-a86e-9b316c97b3db,Self-Help Book,Inspirational self-help book for personal growth,19.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+69d5b97d-72c3-45d1-9fc9-1500c0bb75ea,Cooking Essentials Cookbook,Essential cookbook with a variety of recipes,39.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+4efb066e-16c5-4a3e-8d3c-7d30b06b4ef1,Photography Book,Guide to mastering photography techniques,24.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+a71d15c4-6864-4f3d-9e0a-1d1ad1d10c81,Moisturizing Shampoo,Nourishing shampoo for healthy and shiny hair,9.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
+cfe0f7b4-9e65-4ce5-ae6d-2b378f892f62,Long-Lasting Perfume,Fragrance with long-lasting and captivating scent,49.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
+7b3267c7-62c1-4f16-964a-b7950e4f6b4b,Skin Care Set,Complete set of skincare products for radiant skin,79.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
+d6d26ec1-37dd-491e-84b5-f32e509c7693,Makeup Palette,Palette with a variety of colors for creative makeup looks,29.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
+94d08d07-15c5-4c67-8a6a-2c2fbc0e5159,Hair Dryer,Professional hair dryer for efficient and quick drying,49.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
+a3d1a124-2295-4e8f-87c6-1379773480a1,Gaming Laptop,High-performance laptop for gaming enthusiasts,1499.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+b5e55da0-8a4a-4cc6-8781-380b76a12b1c,4K Smart TV,Smart television with stunning 4K resolution,899.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+f3aa6465-38e0-44d2-8c01-e0f9679424b5,Wireless Gaming Mouse,Responsive and customizable gaming mouse,49.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+cddda6b4-15c1-4c9d-827b-20ac2c07d6a8,Noise-Canceling Headphones,Headphones with advanced noise-canceling technology,129.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+b7f2a5e9-9902-429d-8d5f-e5dfe4bc5101,Smart Home Security System,Security system with smart home integration,299.99,f2e28553-2b43-4d61-bb4d-20a2b88048a0
+a6e769c7-23d1-41b0-8d6e-44ce4400f1ae,Leather Boots,Durable leather boots for a stylish look,79.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+f0c2ddbb-16f1-4ea3-8e24-319a8729c91c,Denim Jacket,Classic denim jacket for a timeless style,59.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+c1b3011a-d8c0-43af-b717-56524f6f9833,Summer Dress,Light and breezy dress for summer occasions,34.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+bd5ef424-b9da-4d43-987a-0cd5abed8b2b,Sporty Sneakers,Comfortable sneakers for an active lifestyle,49.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+e6c3f88b-2db0-4f1b-87b3-44f1db77b861,Formal Trousers,Elegant trousers for formal events,69.99,2ff524f8-e00a-47d3-b2a4-2fe8ec64987d
+a5b2aa07-e681-4a88-9d92-615c59ac1c29,Reclining Sofa,Luxurious reclining sofa for ultimate relaxation,1199.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+b4d3bcb3-186e-4eef-9a62-2c6a2d34a671,Modern Bookshelf,Sleek and modern bookshelf for stylish storage,149.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+f32a3b36-78ab-4cd5-9bf2-1c0d75a74682,King-size Mattress,Comfortable king-size mattress for a good night's sleep,699.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+d6a0e317-44e3-43d3-96d9-8694090c2a1c,Office Chair,Ergonomic office chair for comfortable work hours,129.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+a09fd1f5-702c-49d3-b3f6-44ec5084d12c,Living Room Rug,Stylish rug to enhance the decor of your living room,79.99,136d0e79-295b-4cf1-8e86-d7578c637d94
+c5a6a5dd-8354-4bd4-b6cd-7ebd8b7b58e5,Science Fiction Anthology,Collection of gripping science fiction short stories,19.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+d9a9799d-8d2a-4013-a3cc-6897bf1e939b,Travel Memoirs,Captivating memoirs of travel adventures,29.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+e7e6c28c-f61d-4c4e-af32-3ea98a4d8d02,Personal Development Guide,Guide to personal development and success,14.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+a8c5d6b8-6fcd-482b-9c16-5f48d11e25a9,Vegetarian Cookbook,Delicious vegetarian recipes for a healthy lifestyle,24.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+f1c1e827-7755-4f7b-8e6a-4417d6f099c3,Photography Techniques,Master the art of photography with practical techniques,34.99,d746fc29-ea09-4688-818b-63d6bb6822fc
+a55a5a88-1e9e-42d4-af87-b8fcf6dfb536,Revitalizing Shampoo,Shampoo with revitalizing properties for hair health,12.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
+e5d6d6cc-ef29-4d4a-9d67-3c6d534cc868,Fragrance Gift Set,Luxurious fragrance gift set for special occasions,79.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
+f8b7b7ac-cc88-4a99-9c91-74b9aa21a5a4,Skin Care Routine Set,Complete set for a comprehensive skin care routine,59.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
+c2f5f57f-7d2c-4e7b-8df8-dbf40ac49b9f,Professional Makeup Kit,High-quality makeup kit for professional results,49.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
+a7e7e7b9-aa0d-4b1f-96fb-7388f5aaf32b,Hair Straightener,Professional-grade hair straightener for sleek styling,39.99,cecb9b9f-2b9e-4f7c-a4f0-3965a3e21a4a
